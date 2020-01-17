@@ -91,6 +91,7 @@ public class StackLinkedList<T> {
 		{
 			if(t.data == data)
 			{
+				
 				return true;
 			}
 			else
@@ -121,13 +122,14 @@ public class StackLinkedList<T> {
 	}
 	
 	/*public static void main(String[] args) {
-		StackLinkedList sll = new StackLinkedList();
+		StackLinkedList<Integer> sll = new StackLinkedList<Integer>();
 		sll.push(11);
 		sll.push(24);
 		sll.push(33);
 		sll.push(9);
 		System.out.println(sll.size());
 		System.out.println(sll);
+		System.out.println(sll.search(2));
 		System.out.println( sll.pop());
 		System.out.println(sll);
 		System.out.println(sll.peek());
