@@ -249,6 +249,7 @@ public class UnorderedLinkedList<T> {
 		//get the data as a string
 		public String getData()
 		{
+			
 			String str="";
 			Node<T> t = head;
 			while(t!=null) {
@@ -257,8 +258,8 @@ public class UnorderedLinkedList<T> {
 				{
 					str=str+",";
 				}
+				t=t.next;
 			}
-				
 			return str;
 			
 		}
@@ -284,9 +285,9 @@ public class UnorderedLinkedList<T> {
 			
 		}
 		
-		/*public static void main(String[] args) 
+		public static void main(String[] args) 
 		{
-			UnorderedLinkedList sl = new UnorderedLinkedList();
+			UnorderedLinkedList<Integer> sl = new UnorderedLinkedList<Integer>();
 			sl.add(5);
 			sl.add(7);
 			sl.add(5);
@@ -300,15 +301,17 @@ public class UnorderedLinkedList<T> {
 			//System.out.println(sl.size());
 			//sl.insertAt(12, 5);
 			//System.out.println(sl);
-			sl.append(15);
-			sl.remove(7);
-			System.out.println(sl);
-			System.out.println(sl.size());
+			String st = sl.getData();
+			System.out.println(st);
+			//sl.append(15);
+			//sl.remove(7);
+			//System.out.println(sl);
+			//System.out.println(sl.size());
 			//System.out.println(sl);
 			//System.out.println("List is empty:"+sl.isEmpty());
 			//System.out.println("delete last:"+sl.deleteLast());
 			//System.out.println(sl.deletePos(2));
 			//System.out.println(sl);
-		}	*/
+		}	
 	}
 
