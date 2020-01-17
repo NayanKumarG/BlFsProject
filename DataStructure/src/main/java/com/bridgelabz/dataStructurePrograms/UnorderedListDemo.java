@@ -2,14 +2,14 @@ package com.bridgelabz.dataStructurePrograms;
 import com.bridgelabz.util.*;
 //Demo for unordered list
 public class UnorderedListDemo {
-static  UnorderedLinkedList ull = new UnorderedLinkedList();
+static  UnorderedLinkedList<String> ull = new UnorderedLinkedList<String>();
 	public static void main(String[] args) {
 		
 		//System.out.println("Enter the path of a file: ");
 		//String path = Utility.inputWord();
-		//String str=Utility.getFromFile("Desktop//ul.txt");
+		//String str=Utility.getFromFile("home//user//Desktop//ul.txt");
 		String a[] = {"Nayan" ,"Kumar","Akshay"};
-		//a = str.split(",");
+		//String []a = str.split(",");
 		for(int i = 0 ;i<a.length ; i++)
 		{
 			ull.add(a[i]);
