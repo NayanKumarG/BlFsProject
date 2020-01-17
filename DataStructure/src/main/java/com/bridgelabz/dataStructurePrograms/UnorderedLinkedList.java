@@ -1,28 +1,29 @@
 package com.bridgelabz.dataStructurePrograms;
 
-public class UnorderedLinkedList {
+public class UnorderedLinkedList<T> {
 	
-		class Node
+		@SuppressWarnings("hiding")
+		class Node<T>
 		{
-			Node next;
-			Object data;
-			public Node(Object data)
+			Node<T> next;
+			T data;
+			public Node(T data)
 			{
 				this.data = data;
 			}
 		}
-	  Node head;
+	  Node<T> head;
 
 		//method to insert a node
-		public boolean add(Object data)
+		public boolean add(T data)
 		{
-			Node n = new Node(data);	
+			Node<T> n = new Node<T>(data);	
 			if(head == null)
 			{
 				head = n;
 				return true;
 			}
-			Node t = head;
+			Node<T> t = head;
 		
 			while(t.next!=null)
 			{
@@ -37,7 +38,7 @@ public class UnorderedLinkedList {
 		}
 		
 		// method to remove a node
-		public void remove(Object data)
+		public void remove(T data)
 		{
 			if(head == null)
 			{
@@ -50,8 +51,8 @@ public class UnorderedLinkedList {
 				head = head.next;
 				return;
 			}
-			Node t = head;
-			Node prev = head;
+			Node<T> t = head;
+			Node<T> prev = head;
 			while(t!=null)
 			{
 				prev = t;
@@ -80,7 +81,7 @@ public class UnorderedLinkedList {
 		public int size()
 		{
 			int count = 1;
-			Node t = head;
+			Node<T> t = head;
 			if(head==null)
 			{
 			return 0;
@@ -95,15 +96,15 @@ public class UnorderedLinkedList {
 		}
 		
 		//appending node to last
-		public void append(Object data)
+		public void append(T data)
 		{
-			Node n = new Node(data);
+			Node<T> n = new Node<T>(data);
 			if(head==null)
 			{
 				head = n;
 				return;
 			}
-			Node t = head;
+			Node<T> t = head;
 			while(t.next!= null)
 			{
 				if(t.data==data)
@@ -118,14 +119,14 @@ public class UnorderedLinkedList {
 		}
 		
 		//returns position of item
-		public Object index(Object data)
+		public int index(T data)
 		{
 			if(head == null)
 			{
 				System.out.println("The list is empty:");
-				return null;
+				return 0;
 			}
-			Node t = head;
+			Node<T> t = head;
 			int in = 0;
 			while(t.next!=null)
 			{
@@ -147,16 +148,16 @@ public class UnorderedLinkedList {
 		}
 		
 		//insert node at particular index
-		public void insertAt(Object data , int pos)
+		public void insertAt(T data , int pos)
 		{
-			Node n = new Node(data);
+			Node<T> n = new Node<T>(data);
 			if(pos == 0)
 			{
 				n.next = head;
 				head = n;
 				return;
 			}
-			Node t =head;
+			Node<T> t =head;
 			while(pos>1 && t!=null)
 			{
 				pos--;
@@ -176,15 +177,15 @@ public class UnorderedLinkedList {
 		}
 		
 		//delete last element
-		public Object deleteLast()
+		public T deleteLast()
 		{
 			if(head == null)
 			{
 				System.out.println("List is empty");
 				return null;
 			}
-			Node t = head;
-			Node t1 =head;
+			Node<T> t = head;
+			Node<T> t1 =head;
 			while(t.next!=null)
 			{
 				t1=t;
@@ -195,7 +196,7 @@ public class UnorderedLinkedList {
 		}
 		
 		//delete at position
-		public Object deletePos(int pos)
+		public T deletePos(int pos)
 		{
 			if(head == null)
 			{
@@ -204,11 +205,11 @@ public class UnorderedLinkedList {
 			}
 			if(pos==0)
 			{
-				Object data = head.data;
+				T data = head.data;
 				head = head.next;
 				return data;
 			}
-			Node t = head;
+			Node<T> t = head;
 			while(pos>1 && t!=null)
 			{
 				pos--;
@@ -216,7 +217,7 @@ public class UnorderedLinkedList {
 			}
 			if(t.next!= null)
 			{
-				Object data = t.next.data;
+				T data = t.next.data;
 				t.next = t.next.next;
 				return data;
 			}
@@ -224,7 +225,7 @@ public class UnorderedLinkedList {
 		}
 		
 		//search a node
-		public boolean search(Object data)
+		public boolean search(T data)
 		{
 			if(head == null)
 			{
@@ -232,7 +233,7 @@ public class UnorderedLinkedList {
 				return false;
 				
 			}
-			Node t = head;
+			Node<T> t = head;
 			while(t!=null)
 			{
 				if((t.data).equals(data))
@@ -249,7 +250,7 @@ public class UnorderedLinkedList {
 		public String getData()
 		{
 			String str="";
-			Node t = head;
+			Node<T> t = head;
 			while(t!=null) {
 				str = str+t.data;
 				if(t.next!=null)
@@ -268,7 +269,7 @@ public class UnorderedLinkedList {
 		public String toString()
 		{
 			String s = "";
-			Node t = head;
+			Node<T> t = head;
 			while(t!=null)
 			{
 				s=s+t.data;
