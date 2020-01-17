@@ -7,9 +7,9 @@ static  UnorderedLinkedList<String> ull = new UnorderedLinkedList<String>();
 		
 		//System.out.println("Enter the path of a file: ");
 		//String path = Utility.inputWord();
-		//String str=Utility.getFromFile("home//user//Desktop//ul.txt");
-		String a[] = {"Nayan" ,"Kumar","Akshay"};
-		//String []a = str.split(",");
+		String str=Utility.getFromFile("/home/user/ul.txt");
+		//String a[] = {"Nayan" ,"Kumar","Akshay"};
+		String []a = str.split(",");
 		for(int i = 0 ;i<a.length ; i++)
 		{
 			ull.add(a[i]);
@@ -30,18 +30,21 @@ static  UnorderedLinkedList<String> ull = new UnorderedLinkedList<String>();
 		}
 		
 		System.out.println(ull);
-		//String st = ull.getData();
+		String st = ull.getData();
+		//System.out.println(st);
 		
-	/*	try {
-			Utility.appendToFile("home/user/eclipse-workspace/BlabzPrograms/b.txt", st);
+	
+		
+	try {
+			Utility.appendToFile(st , "/home/user/b.txt");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
 		System.out.println("List data added to a file");
 	
 
-	}*/
+	}
 
 	}
 
-}
+
