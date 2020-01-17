@@ -1,5 +1,6 @@
 package com.bridgelabz.dataStructurePrograms;
 
+
 //import com.bridgelabz.dataStructurePrograms.UnorderedLinkedList.Node;
 
 public class OrderedLinkedList<T extends Comparable<T>> {
@@ -87,7 +88,6 @@ public class OrderedLinkedList<T extends Comparable<T>> {
 		return str;
 		
 	}
-	
  //method to remove item
   public void remove(T data)
   {
@@ -146,6 +146,32 @@ public class OrderedLinkedList<T extends Comparable<T>> {
 	  
   }
   
+	//return at position
+	public T get(int pos)
+	{
+		if(head == null)
+		{
+			System.out.println("List is empty");
+			return null;
+		}
+		if(pos==0)
+		{
+			T data = head.data;
+			return data;
+		}
+		Node<T> t = head;
+		while(pos>1 && t!=null)
+		{
+			pos--;
+			t = t.next;
+		}
+	
+			T data = t.next.data;
+	
+			return data;
+			
+	}
+  
   //to display the list
   @Override
 public String toString() {
@@ -171,7 +197,7 @@ public String toString() {
   
   
   
-	/*public static void main(String[] args) {
+	public static void main(String[] args) {
        
 		OrderedLinkedList<Integer> oll = new OrderedLinkedList<Integer>();
 		oll.add(12);
@@ -179,12 +205,16 @@ public String toString() {
 		oll.add(10);
 		oll.add(13);
 		oll.add(5); 
-		System.out.println(oll);
+		for(int i=0 ; i<oll.size() ;i++)
+		{
+			System.out.println(oll.get(i));
+		}
+		//System.out.println(oll);
 		//System.out.println(oll.size());
-		System.out.println(oll.isEmpty());
+		//System.out.println(oll.isEmpty());
 		//oll.remove(11);
 		//System.out.println(oll);
 		
-	}*/
+	}
 
 }
