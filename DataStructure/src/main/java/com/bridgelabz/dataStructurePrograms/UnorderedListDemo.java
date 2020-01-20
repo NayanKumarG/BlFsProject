@@ -7,8 +7,10 @@ static  UnorderedLinkedList<String> ull = new UnorderedLinkedList<String>();
 		
 		//System.out.println("Enter the path of a file: ");
 		//String path = Utility.inputWord();
-		String str=Utility.getFromFile("/home/user/ul.txt");
 		//String a[] = {"Nayan" ,"Kumar","Akshay"};
+		
+		String str=Utility.getFromFile("/home/user/ul.txt");
+		
 		String []a = str.split(",");
 		for(int i = 0 ;i<a.length ; i++)
 		{
