@@ -2,6 +2,9 @@ package com.bridgelabz.oop.service;
 
 import com.bridgelabz.oop.model.StockAccountModel;
 
+/*
+ * interface for StockAccount
+ */
 public interface StockAccountInf {
 	
 	void checkShare();
