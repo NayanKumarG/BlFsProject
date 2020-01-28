@@ -3,7 +3,7 @@ import com.bridgelabz.oop.service.DeckOfCardsInf;
 import com.bridgelabz.oop.serviceimpl.DeckOfCardsImpl;
 
 /*
- * program for deck of cards
+ * program for deck of card
  */
 public class DeckOfCards {
 
