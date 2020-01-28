@@ -14,6 +14,9 @@ import com.bridgelabz.oop.model.BookModel;
 import com.bridgelabz.oop.service.AddressBookInf;
 import com.bridgelabz.util.Utility;
 
+/*
+ * implementation for address book
+ */
 public class AddressBookImpl implements AddressBookInf {
 
 	private static File file;
@@ -99,6 +102,9 @@ public class AddressBookImpl implements AddressBookInf {
 
 	}
 
+	/*
+	 * method to check user is present or not
+	 */
 	@Override
 	public boolean checkUser(BookModel bmodel) {
 		try

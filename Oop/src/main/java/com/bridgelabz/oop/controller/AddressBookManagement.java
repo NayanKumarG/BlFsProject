@@ -4,7 +4,9 @@ import com.bridgelabz.oop.serviceimpl.AddressBookImpl;
 import com.bridgelabz.oop.model.BookModel;
 import com.bridgelabz.oop.service.AddressBookInf;
 import com.bridgelabz.util.Utility;
-
+/*
+ * program to manage addressbook management
+ */
 public class AddressBookManagement {
 	private static BookModel bmodel;
 	public static void main(String[] args) 
@@ -72,6 +74,9 @@ public class AddressBookManagement {
 		}while(c =='Y' || c == 'y');
 	}
 
+	/*
+	 * method to enter person details
+	 */
 	private static void personProfile(String user) {
 		bmodel = new BookModel();
 		System.out.println("Enter your Detail:");

@@ -21,7 +21,9 @@ public class InventoryManagementImpl implements InventoryInf {
 	
 	@SuppressWarnings("unchecked")
 	
-	//method to write into Json file
+	/*
+	 * method to write into Json file
+	 */
 	@Override
 	public void writeJSON(InventoryModel imodel){
 		JSONObject obj = new JSONObject();

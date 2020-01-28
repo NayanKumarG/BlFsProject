@@ -17,6 +17,9 @@ import com.bridgelabz.oop.service.StockAccountInf;
 import com.bridgelabz.util.Utility;
 import com.bridgelabz.oop.datastructure.OrderedLinkedList;
 
+/*
+ * implementation class for stock account
+ */
 public class StockAccountImpl implements StockAccountInf{
 	OrderedLinkedList<String> oll = new OrderedLinkedList<>();
 	StackLinkedList<String> sll = new StackLinkedList<>();
@@ -339,6 +342,9 @@ public class StockAccountImpl implements StockAccountInf{
 	}
 
 
+	/*
+	 * method to check report
+	 */
 	@Override
 	public void checkReport(String name) {
 		try

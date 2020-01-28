@@ -16,7 +16,9 @@ import com.bridgelabz.oop.service.StockInf;
  */
 public class StockManagementImpl implements StockInf{
 	JSONObject writeObj = new JSONObject();
-	//method to write the data into json file
+	/*
+	 * method to write the data into json file
+	 */
 	@SuppressWarnings("unchecked")
 	@Override
 	public void writeData(StockModel smodel) {
@@ -25,14 +27,7 @@ public class StockManagementImpl implements StockInf{
 			obj.put("SharePrice", smodel.getPrice());
 			writeObj.put(smodel.getName(),obj);
 			
-			/*HashMap<String,Object> map = new HashMap<>();
-			HashMap<String,Object> map1 = new HashMap<>();
-				
-				map.put("Numberofshares",smodel.getNumOfShare());
-				map.put("SharePrice", smodel.getPrice());
-				JSONObject obj = new JSONObject(map);
-				map1.put(smodel.getName(), obj);
-				writeObj = new JSONObject(map1);*/
+
 		try(FileWriter file = new FileWriter("/home/user/eclipse-workspace/Oop"
 				+ "/src/main/java/com/bridgelabz/oop/repository/stock.json"))
 		{

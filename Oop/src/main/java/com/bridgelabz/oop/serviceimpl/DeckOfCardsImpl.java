@@ -71,7 +71,7 @@ public class DeckOfCardsImpl implements DeckOfCardsInf
 	}
 
 	/*
-	 * display the players card using 2D array
+	 * display the players card using 2 dimentional array
 	 */
 	@Override
 	public void displayCards(String [][] array) {
