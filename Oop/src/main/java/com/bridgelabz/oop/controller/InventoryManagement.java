@@ -80,9 +80,11 @@ public class InventoryManagement {
 		im.readJSON();
 
 	}
+	
+	/*
+	 * method to enter itemdetails
+	 */
 	private static void itemDetails(int ch,int i) {
-
-
 		System.out.print("Enter the "+items[ch-1]+""+(i+1)+" name :");
 		imodel.setName(Utility.inputWord());
 		System.out.print("Enter the price:");
