@@ -1,8 +1,9 @@
 package com.bridgelabz.oop.model;
 
+/*
+ * program for stock account model
+ */
 public class StockAccountModel {
-
-
 	private String symbol;
 	private String name;
 	private int noOfShares;
