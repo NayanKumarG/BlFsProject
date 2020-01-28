@@ -1,7 +1,10 @@
 package com.bridgelabz.oop.model;
 
+/*
+ * program for book model
+ */
 public class BookModel {
-	
+
 	private String firstName;
 	private String lastName;
 	private String address;
@@ -74,9 +77,5 @@ public class BookModel {
 	{
 		return this.userId;
 	}
-
-
-
-
 
 }
