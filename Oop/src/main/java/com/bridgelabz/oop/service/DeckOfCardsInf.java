@@ -1,5 +1,8 @@
 package com.bridgelabz.oop.service;
 
+/*
+ * interface for deck of cards
+ */
 public interface DeckOfCardsInf {
 
 	String[] createCards();
