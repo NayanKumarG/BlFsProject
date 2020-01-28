@@ -2,6 +2,9 @@ package com.bridgelabz.oop.service;
 
 import com.bridgelabz.oop.model.BookModel;
 
+/*
+ * interface for address book management system
+ */
 public interface AddressBookInf {
 
 	void addProfile(BookModel bmodel);
