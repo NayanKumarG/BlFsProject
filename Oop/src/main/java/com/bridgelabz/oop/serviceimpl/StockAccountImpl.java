@@ -244,6 +244,9 @@ public class StockAccountImpl implements StockAccountInf{
 	}
 
 
+	/*
+	 * method to sell the share
+	 */
 	@Override
 	public void sellShare(String name , String symbol) {
 		try
