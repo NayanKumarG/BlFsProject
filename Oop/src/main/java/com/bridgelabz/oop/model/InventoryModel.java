@@ -52,7 +52,6 @@ public class InventoryModel {
 	}
 
 	public String getItemName() {
-		// TODO Auto-generated method stub
 		return this.itemName;
 	}
 	public void setItemName(String itemName)
