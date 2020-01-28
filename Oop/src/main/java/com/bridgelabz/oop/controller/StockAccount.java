@@ -3,6 +3,10 @@ import com.bridgelabz.oop.model.StockAccountModel;
 import com.bridgelabz.oop.service.StockAccountInf;
 import com.bridgelabz.oop.serviceimpl.StockAccountImpl;
 import com.bridgelabz.util.*;
+
+/*
+ * program to manage stock account
+ */
 public class StockAccount {
 	private static StockAccountModel saModel;
 	
