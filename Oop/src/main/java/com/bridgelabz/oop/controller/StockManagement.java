@@ -5,6 +5,10 @@ import com.bridgelabz.oop.model.StockModel;
 import com.bridgelabz.oop.service.StockInf;
 import com.bridgelabz.oop.serviceimpl.StockManagementImpl;
 import com.bridgelabz.util.Utility;
+
+/*
+ * program to manage stock management system
+ */
 public class StockManagement {
 
 	private static StockModel smodel;
