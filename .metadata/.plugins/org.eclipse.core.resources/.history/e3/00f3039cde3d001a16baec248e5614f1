@@ -1,0 +1,62 @@
+package com.bridgelabz.oop.serviceimpl;
+
+import java.util.Random;
+
+import com.bridgelabz.oop.service.DeckOfCardsInf;
+
+public class DeckOfCardsImpl implements DeckOfCardsInf
+{
+
+	String [] suits = {"Clubs" , "Diamonds" , "Hearts" , "Spades"};
+	String [] ranks = {"2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , 
+			            "10" , "Jack" , "Queen" , "King" , "Ace"};
+	
+	@Override
+	public String [] createCards() {
+		
+		String [] cards = new String[52];
+		int k = 0;
+		for(String i : suits)
+		{
+			String str = null;
+			for(String j : ranks)
+			{
+				str = j+i;
+				cards[k++] = str ;
+			}
+		}
+		
+		return cards;
+		
+	}
+
+	@Override
+	public String [] shuffleCards(String [] array) {
+		Random rand = new Random();
+		int random;
+		for( int i = 0 ; i<array.length ; i++)
+		{
+			random = rand.nextInt(52);
+			String temp = array[i] ;
+			array[i] = array[random];
+			array[random] = temp;
+		}
+		return array;
+		
+	}
+
+	@Override
+	public void distributeCards(String [] array) {
+		
+		
+		
+	}
+
+	@Override
+	public void displayCards() {
+		
+		
+	}
+
+	
+}

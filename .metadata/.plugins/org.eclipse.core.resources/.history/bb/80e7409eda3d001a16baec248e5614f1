@@ -1,0 +1,14 @@
+package com.bridgelabz.oop.service;
+
+public interface DeckOfCardsInf {
+
+	string createCards();
+
+	void shuffleCards();
+
+	void distributeCards();
+
+	void displayCards();
+
+	
+}

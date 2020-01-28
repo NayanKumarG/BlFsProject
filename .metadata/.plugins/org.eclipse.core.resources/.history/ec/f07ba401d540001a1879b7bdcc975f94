@@ -1,0 +1,58 @@
+package com.bridgelabz.oop.controller;
+import com.bridgelabz.oop.model.StockAccountModel;
+import com.bridgelabz.oop.service.StockAccountInf;
+import com.bridgelabz.oop.serviceimpl.StockAccountImpl;
+import com.bridgelabz.util.*;
+public class StockAccount {
+	private static StockAccountModel saModel;
+	
+	public static void main(String[] args) {
+		StockAccountInf saccount = new StockAccountImpl();
+		saModel = new StockAccountModel();
+		System.out.println("Stock Account Management:");
+		int choice;
+		char c;
+		do
+		{
+		System.out.println("Enter a choice:");
+		System.out.println("1.Check company stocks \n"+"2.Create Account"+"3.Buy share \n"+"4.sell\n"+"5.Check report\n"+"6.Exit");
+		choice = Utility.inputInteger();
+		switch (choice) 
+		{
+		case 1:saccount.checkShare();
+			break;
+		case 2:
+			System.out.println("Enter user name:");
+			saModel.setName(Utility.inputWord());
+			System.out.println("Enter amount:");
+			saModel.setAmount(Utility.inputLong());
+			saccount.createAccount(saModel);
+			System.out.println("Account created successfully:");
+			
+		case 3:
+		
+			System.out.println("Enter the symbole");
+			String symbol = Utility.inputWord();
+			saModel.setSymbol(symbol);
+			
+			
+			saccount.buyShare();
+		break;
+		case 4:saccount.checkShare();
+		break;
+		case 5:saccount.checkShare();
+		break;
+		case 6:System.exit(0);
+			break;
+		default:System.out.println("Enter a correct choice:");
+			break;
+		}
+		System.out.println("Go to service Y/y or N/n");
+		c= Utility.inputWord().charAt(0);
+	}while(c =='Y' || c == 'y');
+	}
+
+
+
+
+}

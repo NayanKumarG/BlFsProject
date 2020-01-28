@@ -1,0 +1,9 @@
+package com.bridgelabz.oop.service;
+
+public interface StockAccountInf {
+	void checkShare();
+
+	void buyShare();
+
+	void createAccount(StockAccountModel saModel);
+}

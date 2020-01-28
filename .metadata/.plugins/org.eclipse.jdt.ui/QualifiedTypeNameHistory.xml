@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.bridgelabz.util.Linkedlist"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.util.AbstractMap"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="com.bridgelabz.dataStructurePrograms.UnorderedLinkedList.Node"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="org.json.simple.ItemList"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.controller.InventoryManagement"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.serviceImpl.StockManagementImpl"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.controller.StockManagement"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.model.InventoryModel"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.service.InventoryInf"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.service.StockInf"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.model.StockModel"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.serviceimpl.StockAccountImpl"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.service.DeckOfCardsInf"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.serviceimpl.DeckOfCardsImpl"/>
+<fullyQualifiedTypeName name="java.util.Random"/>
+<fullyQualifiedTypeName name="java.security.SecureRandom"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.service.AddressBookInf"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.serviceimpl.AddressBookImpl"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.model.BookModel"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="javax.swing.text.html.HTMLDocument.Iterator"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="org.json.simple.parser.JSONParser"/>
+<fullyQualifiedTypeName name="org.json.simple.JSONObject"/>
+<fullyQualifiedTypeName name="java.text.ParseException"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.serviceimpl.AddressBooksImpl"/>
+<fullyQualifiedTypeName name="org.json.simple.JSONArray"/>
+<fullyQualifiedTypeName name="java.util.Iterator"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.model.StockAccountModel"/>
+<fullyQualifiedTypeName name="com.bridgelabz.oop.service.StockAccountInf"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="com.bridgelabz.util.Utility"/>
+</qualifiedTypeNameHistroy>

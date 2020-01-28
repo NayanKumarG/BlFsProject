@@ -1,0 +1,7 @@
+
+csquid:S1854
+"6Remove this useless assignment to local variable "al".(ÃªÄ…H“RMAJORZ
+CODE_SMELL
+†squid:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃªÄ…H”RMINORZ
+CODE_SMELL

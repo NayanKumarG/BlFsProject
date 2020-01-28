@@ -1,0 +1,95 @@
+package com.bridgelabz.algorithmprograms;
+
+import com.bridgelabz.util.Utility;
+
+public class MergeSort {
+
+	public static void main(String[] args) {
+
+		System.out.println("Insertion sort of Strings:");
+		System.out.println("Enter the size of an array:");
+		int n = Utility.inputInteger();
+		String [] str = new String[n];
+		System.out.println("Enter the elements for array");
+		for(int i = 0 ;i<str.length ; i++)
+		{
+			str[i] = Utility.inputWord();
+		}
+		System.out.println("Before mergesort");
+		for(int i=0 ; i<str.length ;i++)
+		{
+			System.out.print(str[i]+" ");
+		}
+		System.out.println();
+		int l=0 ;
+		int h = str.length-1;
+		divideArray(str,l,h);
+		
+		System.out.println("After merge sort:");
+		for(int i=0 ; i<str.length ; i++)
+		{
+			System.out.print(str[i]+" ");
+		}	
+	}
+
+	
+	private static void divideArray( String [] str , int l, int h) {
+		if(l<h)
+		{
+			int middle = (l+h)/2;
+			divideArray(str , l , middle);
+			divideArray(str, middle+1 , h);
+			mergeArray(str , l , middle , h);
+		}
+
+	}
+
+	private static void mergeArray(String [] str , int l, int middle, int h) {
+
+		
+		String [] lArray = new String[middle-l+1];
+		String [] rArray = new String[h-middle];
+		
+		int n1 = lArray.length;
+		int n2 = rArray.length;
+		
+		for(int  i = 0 ; i<n1 ; i++)
+		{
+			lArray[i] = str[l+i];
+		}
+		for(int  j = 0 ; j<n2 ; j++)
+		{
+			rArray[j] = str[middle+1+j];
+		}
+		
+		int i=0,j=0, k = l;
+		while(i<n1 && j<n2)
+		{
+			if(lArray[i].compareToIgnoreCase(rArray[j]) < 0)
+			{
+				str[k++] = lArray[i++];
+
+			}
+			else
+			{
+				str[k++] = rArray[j++];
+			}
+
+		}
+		
+			while(i<n1)
+			{
+				str[k++] = lArray[i++];
+			}
+		
+		
+			while(j<n2)
+			{
+				str[k++] = rArray[j++];
+			}
+		
+
+	}
+	}
+
+

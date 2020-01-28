@@ -1,0 +1,24 @@
+package com.bridgelabz.oop.controller;
+import org.json.simple.JSONObject;
+
+import com.bridgelabz.oop.serviceImpl.StockManagementImpl;
+import com.bridgelabz.util.*;
+public class StockManagement {
+
+	
+
+
+	//method to find each stock values
+	public void stockValue(JSONObject jobj) {
+		
+	}
+	
+	public static void main(String[] args) {
+	    
+		StockManagementImpl sm = new StockManagementImpl();
+		sm.writeData();
+		sm.readData();
+		
+	}
+
+}

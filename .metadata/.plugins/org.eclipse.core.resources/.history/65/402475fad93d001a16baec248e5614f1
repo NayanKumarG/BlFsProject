@@ -1,0 +1,34 @@
+package com.bridgelabz.oop.serviceimpl;
+
+import com.bridgelabz.oop.service.DeckOfCardsInf;
+
+public class DeckOfCardsImpl implements DeckOfCardsInf
+{
+
+	String [] suits = {"Clubs" , "Diamonds" , "Hearts" , "Spades"};
+	String [] ranks = {"1" , "2" , "3" , "4" , "5" , "6" , "7" , "8" , "9" , 
+			            "10" , "Jack" , "Queen" , "King" , "Ace"};
+	
+	@Override
+	public void createCards() {
+		
+		
+	}
+
+	@Override
+	public void shuffleCards() {
+		
+	}
+
+	@Override
+	public void distributeCards() {
+		
+	}
+
+	@Override
+	public void displayCards() {
+		
+	}
+
+	
+}

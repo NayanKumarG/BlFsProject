@@ -1,0 +1,129 @@
+package com.bridgelabz.oop.serviceImpl;
+import org.json.simple.parser.*;
+
+import com.bridgelabz.oop.controller.InventoryManagement;
+import com.bridgelabz.oop.model.InventoryModel;
+import com.bridgelabz.oop.service.InventoryInf;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Iterator;
+import java.util.Scanner;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
+@SuppressWarnings("unchecked")
+public class InventoryManagementImpl implements InventoryInf {
+
+	static Scanner sc = new Scanner(System.in);
+	static JSONArray array ;
+	static JSONObject writeObject = new JSONObject();
+
+	//method to write into Json file
+	@Override
+	public void writeJSON(){
+
+		System.out.println("Inventory management system:");
+
+		int ch;
+		char c;
+		do {
+
+			System.out.println("Enter a choice");
+			System.out.println("1.Rice "+"\n"+"2.Wheats"+"\n"+"3.pulses"+"\n");
+			ch = sc.nextInt();
+			switch(ch)
+			{
+			case 1 :
+				itemDetails(ch);
+				break;
+
+			case 2 :itemDetails(ch);
+			break;
+			case 3 :itemDetails(ch);
+			break;
+			default : System.out.println("Enter a correct input:");
+			break;
+
+			}
+
+			System.out.println("Do you want to continue Y/y or N/n");
+			c= sc.next().charAt(0);
+		}while(c =='Y' || c == 'y');
+
+		try (FileWriter file = new FileWriter("/home/user/eclipse-workspace/Oop"
+				+ "/src/main/java/com/bridgelabz/oop/repository/inventory.json"))
+		{
+			file.write(writeObject.toJSONString());
+
+
+		} catch (IOException e) {
+			System.out.println("File or given directory not found:");
+		}
+
+
+
+	}
+	private static void itemDetails(int ch) {
+		array = new JSONArray();
+
+		String items[] = {"Rice" , "Wheats" , "Pulses"};
+		System.out.println("Enter the number of "+items[ch-1]+" items");
+		int n = sc.nextInt();
+		for(int i=0 ; i<n ;i++)
+		{
+			JSONObject obj = new JSONObject();
+			System.out.print("Enter the "+items[ch-1]+""+(i+1)+" name :");
+			String item = sc.next();
+			System.out.print("Enter the price:");
+			double price = sc.nextDouble();
+			System.out.print("Enter the weight:");
+			double weight = sc.nextDouble();
+			obj.put("Name",item);
+			obj.put("Price",price);
+			obj.put("Weight",weight);
+			array.add(obj);
+
+		}
+
+		writeObject.put(items[ch-1], array);
+
+
+
+	}
+
+	//read data from json file
+	@Override
+	public void readJSON() {
+		String items[] = {"Rice" , "Wheats" , "Pulses"};
+		InventoryManagement im = new InventoryManagement();
+		JSONParser parser = new JSONParser();
+		JSONArray jsonArray ;
+
+		try(FileReader file = new FileReader("/home/user/eclipse-workspace/Oop"
+				+ "/src/main/java/com/bridgelabz/oop/repository/inventory.json"))
+		{
+			JSONObject obj = (JSONObject)parser.parse(file);
+			for(int i=0 ; i< items.length ;i++)
+			{
+				//check item is present or not
+				if(obj.containsKey(items[i]))
+				{
+					System.out.println("-----------Details of "+items[i]+"---------");
+					jsonArray = (JSONArray)obj.get(items[i]);
+					for(int j=0 ;j<jsonArray.size();j++)
+					{
+						JSONObject object = (JSONObject) jsonArray.get(j);
+						System.out.println(object);
+						System.out.println("Total amount:"+im.getTotal(object));
+					}
+				} 
+			}
+
+		}catch(IOException | ParseException e){
+			System.out.println("File not found:");
+		}
+	}
+}

@@ -1,0 +1,7 @@
+
+Hsquid:S1643r"Use a StringBuilder instead.(ÃíH£"RMINORZ
+CODE_SMELL
+Nsquid:S1643u"Use a StringBuilder instead.(²º¾øÿÿÿÿH¤"RMINORZ
+CODE_SMELL
+}squid:CommentedOutCodeLine|"<This block of commented-out lines of code should be removed.(õ–ôÄùÿÿÿÿH¥"RMAJORZ
+CODE_SMELL

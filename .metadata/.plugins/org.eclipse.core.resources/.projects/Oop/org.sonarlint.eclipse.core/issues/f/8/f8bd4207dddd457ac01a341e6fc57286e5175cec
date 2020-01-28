@@ -1,0 +1,59 @@
+
+wsquid:HiddenFieldCheck;"9Rename "array" which hides the field declared at line 22.(ƒı”j8›‚¯ş-Hé)RMAJORZ
+CODE_SMELL
+»squid:S1192$"Define a constant instead of duplicating this literal "/src/main/java/com/bridgelabz/oop/repository/userAccounts.json" 4 times.(İŒè¶üÿÿÿÿ8‘œ·ş-Hê)RCRITICALZ
+CODE_SMELL
+`squid:S1148ä"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ñ¸¶ş-Hë)RMINORZVULNERABILITY
+squid:CommentedOutCodeLiner"<This block of commented-out lines of code should be removed.(²ç â8ôÜÃáı-Hì)RMAJORZ
+CODE_SMELL
+ksquid:S1135æ"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8§Ñ¸¶ş-Hí)RINFOZ
+CODE_SMELL
+squid:S2147å"ECombine this catch with the one at line 223, which has the same body.(âÃƒŠıÿÿÿÿ8ÁÂê¶ş-Hî)RMINORZ
+CODE_SMELL
+wsquid:HiddenFieldCheck_"9Rename "array" which hides the field declared at line 22.(ƒı”j8ÏòŞ®ş-Hï)RMAJORZ
+CODE_SMELL
+_squid:S1148,"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›‚¯ş-Hğ)RMINORZVULNERABILITY
+_squid:S1148L"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÏòŞ®ş-Hñ)RMINORZVULNERABILITY
+csquid:S1125Í")Remove the literal "false" boolean value.(ôÄØ¾ÿÿÿÿÿ8ÁÂê¶ş-Hò)RMINORZ
+CODE_SMELL
+psquid:S1854"<Remove this useless assignment to local variable "userObj1".(…»Æ58Õİô´ş-Hó)RMAJORZ
+CODE_SMELL
+`squid:S1148ç"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8§Ñ¸¶ş-Hô)RMINORZVULNERABILITY
+ksquid:S1135ã"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8ÁÂê¶ş-Hõ)RINFOZ
+CODE_SMELL
+‡squid:S1192"KDefine a constant instead of duplicating this literal "noOfShares" 3 times.(Şíİÿıÿÿÿÿ8Âğ¶ş-Hö)RCRITICALZ
+CODE_SMELL
+ƒsquid:S1192"GDefine a constant instead of duplicating this literal "symbol" 3 times.(¦Ê¬Ãùÿÿÿÿ8µğˆ·ş-H÷)RCRITICALZ
+CODE_SMELL
+}squid:S2095Ô"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(†‚Îûÿÿÿÿ8úæ‘·ş-Hø)RBLOCKERZBUG
+squid:S1192""aDefine a constant instead of duplicating this literal "/home/user/eclipse-workspace/Oop" 7 times.(ÑíğŸÿÿÿÿÿ8›‚¯ş-Hù)RCRITICALZ
+CODE_SMELL
+psquid:S1854’"<Remove this useless assignment to local variable "stockObj".(óåÕ28Õİô´ş-Hú)RMAJORZ
+CODE_SMELL
+]squid:S1481>")Remove this unused "jobj" local variable.(ÏğÏâ8›‚¯ş-Hû)RMINORZ
+CODE_SMELL
+xsquid:S2095Ö"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(‚é§„8úæ‘·ş-Hü)RBLOCKERZBUG
+‰squid:S3776~"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ı×Á€8§Ñ¸¶ş-Hı)RCRITICALZ
+CODE_SMELL
+xsquid:S2147+"DCombine this catch with the one at line 41, which has the same body.(ï­£Ä8›‚¯ş-Hş)RMINORZ
+CODE_SMELL
+}squid:S2147M"DCombine this catch with the one at line 73, which has the same body.(âÃƒŠıÿÿÿÿ8¤ò¯ş-Hÿ)RMINORZ
+CODE_SMELL
+»squid:S1192\"Define a constant instead of duplicating this literal "/src/main/java/com/bridgelabz/oop/repository/companyStock.json" 3 times.(Ñ®¼‘şÿÿÿÿ8úæ‘·ş-H€*RCRITICALZ
+CODE_SMELL
+_squid:S1148J"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8›‚¯ş-H*RMINORZVULNERABILITY
+_squid:S1148*"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Àéà®ş-H‚*RMINORZVULNERABILITY
+wsquid:S1854“"=Remove this useless assignment to local variable "stockObj2".(©“Š§ùÿÿÿÿ8Õİô´ş-Hƒ*RMAJORZ
+CODE_SMELL
+„squid:S1192"HDefine a constant instead of duplicating this literal "balance" 3 times.(ûï·åøÿÿÿÿ8Ÿâ…·ş-H„*RCRITICALZ
+CODE_SMELL
+_squid:S1148N"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Õİô´ş-H…*RMINORZVULNERABILITY
+ksquid:S1135à"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8§Ñ¸¶ş-H†*RINFOZ
+CODE_SMELL
+`squid:S1148á"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8ÁÂê¶ş-H‡*RMINORZVULNERABILITY
+usquid:S1854";Remove this useless assignment to local variable "userObj".(·‘´´şÿÿÿÿ8Õİô´ş-Hˆ*RMAJORZ
+CODE_SMELL
+zsquid:S2147â"ECombine this catch with the one at line 223, which has the same body.(ï­£Ä8ÁÂê¶ş-H‰*RMINORZ
+CODE_SMELL
+xsquid:S2147K"DCombine this catch with the one at line 73, which has the same body.(ï­£Ä8ÏòŞ®ş-HŠ*RMINORZ
+CODE_SMELL

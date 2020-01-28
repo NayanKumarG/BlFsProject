@@ -1,0 +1,32 @@
+
+~squid:S3973}"IUse indentation to denote the code conditionally executed by this "else".(„¶áìøÿÿÿÿH×RCRITICALZ
+CODE_SMELL
+bsquid:S1854q"5Remove this useless assignment to local variable "t".(ÚÏ§HŞRMAJORZ
+CODE_SMELL
+Jsquid:S1643¸"Use a StringBuilder instead.(‘‘¯ÌHÔRMINORZ
+CODE_SMELL
+Hsquid:S1643P"Use a StringBuilder instead.(ÃíHÒRMINORZ
+CODE_SMELL
+‡squid:S2293É"YReplace the type specification in this constructor call with the diamond operator ("<>").(™¢‡èHàRMINORZ
+CODE_SMELL
+squid:S1488¨"\Immediately return this expression instead of assigning it to the temporary variable "data".(ìç…øûÿÿÿÿHÙRMINORZ
+CODE_SMELL
+ksquid:S2259¨"?A "NullPointerException" could be thrown; "t" is nullable here.(ìç…øûÿÿÿÿHÛRMAJORZBUG
+squid:S1488"\Immediately return this expression instead of assigning it to the temporary variable "data".(şéÿòÿÿÿÿÿHØRMINORZ
+CODE_SMELL
+Nsquid:S1643S"Use a StringBuilder instead.(‚º¤öûÿÿÿÿHÓRMINORZ
+CODE_SMELL
+Œsquid:S4165q"_Remove this useless assignment; "t" already holds the assigned value along all execution paths.(ÚÏ§HÖRMAJORZ
+CODE_SMELL
+esquid:S2589#"8Remove this expression which always evaluates to "false"(ÀÃ˜½HÚRMAJORZ
+CODE_SMELL
+†squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñ‚ñêHÜRMINORZ
+CODE_SMELL
+jsquid:S1854j"8Remove this useless assignment to local variable "prev".(õÇÆêÿÿÿÿÿHİRMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLineÓ"<This block of commented-out lines of code should be removed.(²ç âHâRMAJORZ
+CODE_SMELL
+Osquid:S1643µ"Use a StringBuilder instead.(ûÃ•ğûÿÿÿÿHÕRMINORZ
+CODE_SMELL
+msquid:S1126{"AReplace this if-then-else statement by a single return statement.(«ğHßRMINORZ
+CODE_SMELL

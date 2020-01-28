@@ -1,0 +1,17 @@
+package com.bridgelabz.oop.controller;
+import com.bridgelabz.oop.serviceImpl.StockManagementImpl;
+import com.bridgelabz.util.*;
+public class StockManagement {
+
+	
+	
+	
+	public static void main(String[] args) {
+    
+		StockManagementImpl sm = new StockManagementImpl();
+		sm.writeData();
+		sm.readData();
+		
+	}
+
+}

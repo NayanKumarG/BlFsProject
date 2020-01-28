@@ -1,0 +1,7 @@
+
+‰squid:S3776	"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(Çµí‘8‰Ïş³ş-Hö$RCRITICALZ
+CODE_SMELL
+Šsquid:S1450"VRemove the "saModel" field and declare it as a local variable in the relevant methods.(Ş¬á8‰™Ú®ş-HÃ"RMINORZ
+CODE_SMELL
+bsquid:S1125-")Remove the literal "false" boolean value.(ôÄØ¾ÿÿÿÿÿ8ã–›´ş-Hƒ%RMINORZ
+CODE_SMELL

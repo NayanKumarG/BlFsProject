@@ -1,0 +1,19 @@
+
+wsquid:S39731"GUse indentation to denote the code conditionally executed by this "if".(Õ¥·¶H‹RCRITICALZ
+CODE_SMELL
+wsquid:S3973C"GUse indentation to denote the code conditionally executed by this "if".(¬¸Ä¾HŒRCRITICALZ
+CODE_SMELL
+…squid:S1488\"YImmediately return this expression instead of assigning it to the temporary variable "d".(…æ§HRMINORZ
+CODE_SMELL
+‚squid:S3776"RRefactor this method to reduce its Cognitive Complexity from 28 to the 15 allowed.(Çµí‘HRCRITICALZ
+CODE_SMELL
+jsquid:S1197"8Move the array designator from the variable to the type.(î×ŸúşÿÿÿÿHRMINORZ
+CODE_SMELL
+esquid:S1197"8Move the array designator from the variable to the type.(’Şø‰HRMINORZ
+CODE_SMELL
+jsquid:S1197"8Move the array designator from the variable to the type.(¥‰ÿıÿÿÿÿH‘RMINORZ
+CODE_SMELL
+nsquid:S1126O"AReplace this if-then-else statement by a single return statement.(£“ÿåH’RMINORZ
+CODE_SMELL
+}squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(–“ŞÚÿÿÿÿÿH“RMAJORZ
+CODE_SMELL

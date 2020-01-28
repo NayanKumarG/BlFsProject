@@ -1,0 +1,207 @@
+package com.bridgelabz.oop.serviceimpl;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Iterator;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
+import com.bridgelabz.oop.datastructure.*;
+import com.bridgelabz.oop.model.StockAccountModel;
+import com.bridgelabz.oop.service.StockAccountInf;
+import com.bridgelabz.util.Utility;
+import com.bridgelabz.oop.datastructure.*;
+
+public class StockAccountImpl implements StockAccountInf{
+	OrderedLinkedList<String> oll = new OrderedLinkedList<>();
+	JSONArray array= new JSONArray();
+	@Override
+	public void createAccount(StockAccountModel saModel) {
+
+		JSONObject obj = new JSONObject();
+		JSONObject object = new JSONObject();
+		obj.put("symbol", null);
+		obj.put("balance", saModel.getAmount());
+		obj.put("noOfShares",0);
+		object.put(saModel.getName(), obj);
+		array.add(object);
+
+		try(FileWriter writer = new FileWriter("/home/user/eclipse-workspace/Oop"
+
+					+ "/src/main/java/com/bridgelabz/oop/repository/userAccounts.json"))
+		{
+
+			writer.write(array.toJSONString());
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} 
+	}
+
+
+
+	@Override
+	public boolean checkUser(String user) {
+
+		JSONParser parser = new JSONParser();
+		try(FileReader file = new FileReader("/home/user/eclipse-workspace/Oop"
+
+				+ "/src/main/java/com/bridgelabz/oop/repository/.userAccountsjson"))
+		{
+
+			JSONArray array =  (JSONArray) parser.parse(file);
+			Iterator<?> iterator = array.iterator();
+			JSONObject obj = new JSONObject();
+			JSONObject jobj = new JSONObject();
+			while(iterator.hasNext())
+			{
+				obj = (JSONObject) iterator.next();
+
+				if (obj.containsKey(user))
+				{
+					return true;
+				}
+			}
+			return false;
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (ParseException e) {
+			e.printStackTrace();
+		}
+		return false;
+
+
+	}
+
+
+
+	@Override
+	public void checkShare() {
+		JSONParser parser = new JSONParser();
+		try(FileReader file = new FileReader("/home/user/eclipse-workspace/Oop"
+
+				+ "/src/main/java/com/bridgelabz/oop/repository/companyStock.json"))
+		{
+
+			JSONArray array =  (JSONArray) parser.parse(file);
+			Iterator<?> iterator = array.iterator();
+			JSONObject obj = new JSONObject();
+			JSONObject jobj = new JSONObject();
+			while(iterator.hasNext())
+			{
+				obj = (JSONObject) iterator.next();
+
+				for(Object keys : obj.keySet())
+				{
+					String key = (String)keys;
+					if (!oll.search(key))
+					{
+						oll.add(key);
+					}
+					System.out.println(key);
+					jobj = (JSONObject) obj.get(key);
+					System.out.println("-------"+key+" stock detail"+"-----");
+					System.out.println(jobj);
+					//System.out.println(oll);
+				}
+
+			}
+		}catch(IOException | ParseException e)
+		{
+			System.out.println("Directory or file not found");
+		}
+
+	}
+
+	@Override
+	public void buyShare(String name, String symbol) {
+		try
+		{
+			JSONParser parser = new JSONParser();
+			File file = new File("/home/user/eclipse-workspace/Oop"
+					+ "/src/main/java/com/bridgelabz/oop/repository/userAccount.json");
+			FileReader reader = new FileReader(file);
+
+
+			File file1 = new File("/home/user/eclipse-workspace/Oop"
+					+ "/src/main/java/com/bridgelabz/oop/repository/companyStock.json");
+			FileReader reader1 = new FileReader(file);
+
+			JSONArray userArray =  (JSONArray) parser.parse(reader);
+			Iterator<?> iterator1 = userArray.iterator();
+			JSONObject userObj = new JSONObject();
+			JSONObject userObj1 = new JSONObject();
+
+			JSONArray stockArray =  (JSONArray) parser.parse(reader1);
+			Iterator<?> iterator2 = stockArray.iterator();
+			JSONObject stockObj = new JSONObject();
+			JSONObject stockObj2 = new JSONObject();
+
+			while(iterator2.hasNext())
+			{
+				stockObj = (JSONObject) iterator2.next();
+				if(stockObj.containsKey(symbol))
+				{
+					boolean flag =false;
+					stockObj2 = (JSONObject) stockObj.get(symbol);
+					int stockShareCount = Integer.parseInt(stockObj2.get("Numberofshares").toString());
+					System.out.println("Available shares: "+stockShareCount);
+					while(iterator1.hasNext())
+					{
+						userObj = (JSONObject) iterator2.next();
+						if(userObj.containsKey(name))
+						{
+							userObj1 = (JSONObject) userObj.get(name);
+							do
+							{
+								System.out.println("Enter the number of shares");
+								int n = Utility.inputInteger();
+
+								if(n<=stockShareCount)
+								{
+									
+									flag = true;
+								}
+								else
+								{
+									System.out.println("enter the lesser shares");
+								}
+
+							}while(flag==false);
+						}
+					}
+				}
+
+			}
+
+
+		} catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (ParseException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+	}
+
+
+
+
+
+
+
+
+}

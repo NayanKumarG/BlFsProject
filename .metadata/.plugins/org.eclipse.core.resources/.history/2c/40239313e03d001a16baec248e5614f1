@@ -1,0 +1,18 @@
+package com.bridgelabz.oop.service;
+
+public interface DeckOfCardsInf {
+
+	String[] createCards();
+	
+	String[] shuffleCards(String[] str);
+	
+	void distributeCards(String[] str2);
+
+	void displayCards();
+
+	
+
+	
+
+	
+}

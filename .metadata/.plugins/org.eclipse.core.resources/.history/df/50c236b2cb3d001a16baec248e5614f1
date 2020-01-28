@@ -1,0 +1,27 @@
+package com.bridgelabz.oop.controller;
+import com.bridgelabz.oop.service.StockAccountInf;
+import com.bridgelabz.util.*;
+public class StockAccount {
+
+	public static void main(String[] args) {
+		StockAccountInf saccount = new StockAccountInf();
+		System.out.println("Stock Account Management:");
+		System.out.println("Enter a choice:");
+		System.out.println("1.Check company shares \n"+"2.Exit");
+		int choice = Utility.inputInteger();
+		switch (choice) 
+		{
+		case 1:shareavailability();
+			break;
+		case 2:System.exit(0);
+			break;
+		default:System.out.println("Enter a correct choice:");
+			break;
+		}
+	}
+
+	private static void shareavailability() {
+		
+	}
+
+}

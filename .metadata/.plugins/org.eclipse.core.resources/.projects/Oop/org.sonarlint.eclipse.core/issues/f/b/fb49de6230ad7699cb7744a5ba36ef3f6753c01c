@@ -1,0 +1,8 @@
+
+bsquid:S1125,")Remove the literal "false" boolean value.(ôÄØ¾ÿÿÿÿÿ8®È”×ı-H±*RMINORZ
+CODE_SMELL
+squid:S11921"SDefine a constant instead of duplicating this literal "Enter your userId:" 3 times.(½‘Ïìøÿÿÿÿ8›Àµ·ı-H²*RCRITICALZ
+CODE_SMELL
+†
+squid:S128?"LEnd this switch case with an unconditional break, return or throw statement.(ÌÊëÎüÿÿÿÿ8ŸêöÚı-H³*RBLOCKERZ
+CODE_SMELL

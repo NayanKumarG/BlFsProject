@@ -1,0 +1,8 @@
+package com.bridgelabz.oop.service;
+
+public interface StockInf {
+
+	void writeData();
+	void readData();
+	
+}

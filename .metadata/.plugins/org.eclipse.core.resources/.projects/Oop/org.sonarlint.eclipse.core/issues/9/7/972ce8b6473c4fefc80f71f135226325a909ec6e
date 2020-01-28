@@ -1,0 +1,74 @@
+
+“squid:S1450"ZRemove the "writeObject" field and declare it as a local variable in the relevant methods.(…ŸØÉûÿÿÿÿ8ÃçÕØı-HŒ*RMINORZ
+CODE_SMELL
+rsquid:S2696o"6Make the enclosing method "static" or remove this set.(Èÿ»ùÿÿÿÿ8ÃçÕØı-H¤*RCRITICALZ
+CODE_SMELL
+•squid:S1192]"YDefine a constant instead of duplicating this literal "Given file is not found:" 4 times.(Í‘©Üüÿÿÿÿ8å¾Ë¶ı-H‘*RCRITICALZ
+CODE_SMELL
+rsquid:S2696F"6Make the enclosing method "static" or remove this set.(¯òŒÉşÿÿÿÿ8úÛÂÙı-H©*RCRITICALZ
+CODE_SMELL
+}squid:HiddenFieldCheckÅ"8Rename "file" which hides the field declared at line 19.(–½àöÿÿÿÿÿ8úÛÂÙı-H—*RMAJORZ
+CODE_SMELL
+ssquid:S2696š"6Make the enclosing method "static" or remove this set.(Èÿ»ùÿÿÿÿ8úÛÂÙı-H®*RCRITICALZ
+CODE_SMELL
+}squid:S1192%"FDefine a constant instead of duplicating this literal "State" 4 times.(Õ…¼ò8É¼–Ûı-H*RCRITICALZ
+CODE_SMELL
+squid:S1192!"JDefine a constant instead of duplicating this literal "FirstName" 4 times.(·ÂÏ8É¼–Ûı-Hª*RCRITICALZ
+CODE_SMELL
+µsquid:S1192l"~Define a constant instead of duplicating this literal "/src/main/java/com/bridgelabz/oop/repository/addressBook.json" 4 times.(‹óÄ¢8Ìù´½ı-H£*RCRITICALZ
+CODE_SMELL
+€squid:S1192""IDefine a constant instead of duplicating this literal "LastName" 4 times.(ÿ™Ö8É¼–Ûı-H¬*RCRITICALZ
+CODE_SMELL
+rsquid:S2696@"6Make the enclosing method "static" or remove this set.(Èÿ»ùÿÿÿÿ8ÃçÕØı-H*RCRITICALZ
+CODE_SMELL
+squid:S1192&"HDefine a constant instead of duplicating this literal "ZipCode" 4 times.(Û‘¨ç8É¼–Ûı-H‹*RCRITICALZ
+CODE_SMELL
+”squid:S1192a"XDefine a constant instead of duplicating this literal "Parsing is not possible" 4 times.(àø¹¯şÿÿÿÿ8å¾Ë¶ı-H“*RCRITICALZ
+CODE_SMELL
+ysquid:HiddenFieldChecku":Rename "object" which hides the field declared at line 21.(˜›Ê”8äÄ¢Úı-H§*RMAJORZ
+CODE_SMELL
+˜squid:S1192k"aDefine a constant instead of duplicating this literal "/home/user/eclipse-workspace/Oop" 4 times.(áó¤ø8Ìù´½ı-H¦*RCRITICALZ
+CODE_SMELL
+msquid:S2696Ì"6Make the enclosing method "static" or remove this set.(şİÿs8ä®Ÿ¹ş-Hû*RCRITICALZ
+CODE_SMELL
+msquid:S2696¢"6Make the enclosing method "static" or remove this set.(şİÿs8ÃçÕØı-H*RCRITICALZ
+CODE_SMELL
+}squid:S2095¬"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(†‚Îûÿÿÿÿ8úÛÂÙı-H•*RBLOCKERZBUG
+„squid:S1192'"HDefine a constant instead of duplicating this literal "PhoneNo" 4 times.(‹Ê³Ûÿÿÿÿÿ8É¼–Ûı-H¢*RCRITICALZ
+CODE_SMELL
+squid:S1192#"HDefine a constant instead of duplicating this literal "Address" 4 times.(çÏÉØ8É¼–Ûı-H™*RCRITICALZ
+CODE_SMELL
+msquid:S2696p"6Make the enclosing method "static" or remove this set.(îÓú¬8Ê¼úÛı-H¯*RCRITICALZ
+CODE_SMELL
+fsquid:S2093h"*Change this "try" to a try-with-resources.(ç£êúÿÿÿÿ8Ê¼úÛı-Hš*RCRITICALZ
+CODE_SMELL
+ssquid:S2696À"6Make the enclosing method "static" or remove this set.(Èÿ»ùÿÿÿÿ8·œ‰Üı-H*RCRITICALZ
+CODE_SMELL
+msquid:S2696q"6Make the enclosing method "static" or remove this set.(˜Áà®8úÛÂÙı-H›*RCRITICALZ
+CODE_SMELL
+`squid:S1148"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿ8Ê¼úÛı-H’*RMINORZVULNERABILITY
+|squid:HiddenFieldCheck+"8Rename "file" which hides the field declared at line 19.(Û•Ô¡ıÿÿÿÿ8°¦ÁÙı-H–*RMAJORZ
+CODE_SMELL
+’squid:S1192Ü"UDefine a constant instead of duplicating this literal "Enter the new value:" 7 times.(âµûìüÿÿÿÿ8·œ‰Üı-H¡*RCRITICALZ
+CODE_SMELL
+Œsquid:S1450"SRemove the "file" field and declare it as a local variable in the relevant methods.(ƒîéÏüÿÿÿÿ8Ê¼úÛı-H¥*RMINORZ
+CODE_SMELL
+}squid:HiddenFieldCheck›"8Rename "file" which hides the field declared at line 19.(–½àöÿÿÿÿÿ8·œ‰Üı-Hœ*RMAJORZ
+CODE_SMELL
+}squid:S2095"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(İ çÏıÿÿÿÿ8·œ‰Üı-H¨*RBLOCKERZBUG
+rsquid:S2696 "6Make the enclosing method "static" or remove this set.(ËÛÖùÿÿÿÿ8ÃçÕØı-H­*RCRITICALZ
+CODE_SMELL
+ssquid:S2696È"6Make the enclosing method "static" or remove this set.(¯òŒÉşÿÿÿÿ8»¡Úı-H *RCRITICALZ
+CODE_SMELL
+msquid:S2696"6Make the enclosing method "static" or remove this set.(è°¸•8úÛÂÙı-H˜*RCRITICALZ
+CODE_SMELL
+ssquid:S2696"6Make the enclosing method "static" or remove this set.(¯òŒÉşÿÿÿÿ8·œ‰Üı-H°*RCRITICALZ
+CODE_SMELL
+lsquid:S2696K"6Make the enclosing method "static" or remove this set.(şİÿs8·œ‰Üı-H*RCRITICALZ
+CODE_SMELL
+msquid:S2696k"6Make the enclosing method "static" or remove this set.(áó¤ø8Ê¼úÛı-H*RCRITICALZ
+CODE_SMELL
+squid:S1192_"QDefine a constant instead of duplicating this literal "wrong directory " 4 times.(ş²Õ™üÿÿÿÿ8å¾Ë¶ı-H«*RCRITICALZ
+CODE_SMELL
+wsquid:HiddenFieldCheckB"8Rename "file" which hides the field declared at line 19.(úıñ„8°¦ÁÙı-HŸ*RMAJORZ
+CODE_SMELL

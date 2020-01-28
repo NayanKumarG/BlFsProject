@@ -1,0 +1,24 @@
+package com.bridgelabz.oop.controller;
+
+import com.bridgelabz.oop.service.DeckOfCardsInf;
+import com.bridgelabz.oop.serviceimpl.DeckOfCardsImpl;
+
+public class DeckOfCards {
+
+	public static void main(String[] args) {
+		DeckOfCardsInf dcards = new DeckOfCardsImpl();
+		String [] str = dcards.createCards();
+		String [] str2 = dcards.shuffleCards(str);
+		int i=0;
+		for(String s : str2)
+		{
+			System.out.print(s+" ");
+			i++;
+		}
+		System.out.println();
+		System.out.println(i);
+		dcards.distributeCards(str2);
+		dcards.displayCards();
+	}
+
+}

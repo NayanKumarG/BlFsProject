@@ -1,0 +1,125 @@
+
+‡squid:S2293¹"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÃªÄ…HRMINORZ
+CODE_SMELL
+‹squid:S14882"YImmediately return this expression instead of assigning it to the temporary variable "n".(ŞÖÍïûÿÿÿÿHRMINORZ
+CODE_SMELL
+ksquid:S1197"8Move the array designator from the variable to the type.(øü÷ØøÿÿÿÿHRMINORZ
+CODE_SMELL
+Msquid:S2119ã"Save and re-use this "Random".(®ø»›şÿÿÿÿHRCRITICALZBUG
+Tsquid:S1659I""Declare "cnt2" on a separate line.(©äœÍûÿÿÿÿH‘RMINORZ
+CODE_SMELL
+Œsquid:S1488Œ"YImmediately return this expression instead of assigning it to the temporary variable "c".(Õİ¦³şÿÿÿÿH’RMINORZ
+CODE_SMELL
+Osquid:S1659“"!Declare "sum" on a separate line.(ñ•‘“H“RMINORZ
+CODE_SMELL
+Msquid:S1659€"Declare "s" on a separate line.(´Ö…ãH”RMINORZ
+CODE_SMELL
+Œsquid:S1488”"YImmediately return this expression instead of assigning it to the temporary variable "f".(´Ë´“ùÿÿÿÿH•RMINORZ
+CODE_SMELL
+Psquid:S1659å""Declare "rand" on a separate line.(ÏÇÿäH–RMINORZ
+CODE_SMELL
+fsquid:S1197á"8Move the array designator from the variable to the type.(¼ˆ•şH—RMINORZ
+CODE_SMELL
+Msquid:S1659"Declare "t" on a separate line.(–êê¶H˜RMINORZ
+CODE_SMELL
+ksquid:S1197ô"8Move the array designator from the variable to the type.(øÍš»úÿÿÿÿH™RMINORZ
+CODE_SMELL
+osquid:S1126…"AReplace this if-then-else statement by a single return statement.(ÎİëHšRMINORZ
+CODE_SMELL
+Ysquid:S1148Å"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH›RMINORZVULNERABILITY
+ksquid:S1197ë"8Move the array designator from the variable to the type.(¡ú¦“øÿÿÿÿHœRMINORZ
+CODE_SMELL
+Tsquid:S1659"&Declare "betCount" on a separate line.(–êê¶HRMINORZ
+CODE_SMELL
+Msquid:S1659ş"Declare "k" on a separate line.(«çóöHRMINORZ
+CODE_SMELL
+fsquid:S2184\"@Cast one of the operands of this integer division to a "double".(€³¨ÃHŸRMINORZBUG
+hsquid:S2184\"BCast one of the operands of this division operation to a "double".(€³¨ÃH RMINORZBUG
+Vsquid:S1125¾"(Remove the literal "true" boolean value.(”è¨H¡RMINORZ
+CODE_SMELL
+Qsquid:S1659¨"#Declare "root2" on a separate line.(÷Ì¤H¢RMINORZ
+CODE_SMELL
+Osquid:S1659±"!Declare "dec" on a separate line.(Şî­¶H£RMINORZ
+CODE_SMELL
+Msquid:S2119µ"Save and re-use this "Random".(šŸ«íøÿÿÿÿH¤RCRITICALZBUG
+`squid:S2093Á"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿH¥RCRITICALZ
+CODE_SMELL
+fsquid:S1197ˆ"8Move the array designator from the variable to the type.(¸«ˆ„H¦RMINORZ
+CODE_SMELL
+lsquid:S1118":Add a private constructor to hide the implicit public one.(¹‹ó¿ıÿÿÿÿH§RMAJORZ
+CODE_SMELL
+Œsquid:S3012Î"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ò³å³ÿÿÿÿÿH¨RMINORZ
+CODE_SMELL
+squid:S1319ˆ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¸«ˆ„H©RMINORZ
+CODE_SMELL
+Rsquid:S1659ê"$Declare "count3" on a separate line.(ß´ß¥HªRMINORZ
+CODE_SMELL
+nsquid:S1126?"AReplace this if-then-else statement by a single return statement.(²â€ëH«RMINORZ
+CODE_SMELL
+w
+squid:S899Ú"BDo something with the "boolean" value returned by "createNewFile".(Ğ’ÍùÿÿÿÿH¬RMINORZVULNERABILITY
+Rsquid:S1659ã"Declare "h" on a separate line.(ÉûÜ²úÿÿÿÿH­RMINORZ
+CODE_SMELL
+squid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "str".(ÓŠû¬úÿÿÿÿH®RMINORZ
+CODE_SMELL
+fsquid:S1197Ø"8Move the array designator from the variable to the type.(¼Ù»ÅH¯RMINORZ
+CODE_SMELL
+Ysquid:S1148Î"#Use a logger to log this exception.(€ÉÔ…ıÿÿÿÿH°RMINORZVULNERABILITY
+†
+squid:S135¸"YReduce the total number of break and continue statements in this loop to use at most one.(«Å‘H±RMINORZ
+CODE_SMELL
+†squid:S14888"YImmediately return this expression instead of assigning it to the temporary variable "n".(Å»µH²RMINORZ
+CODE_SMELL
+fsquid:S1197×"8Move the array designator from the variable to the type.(¾·Ÿ™H³RMINORZ
+CODE_SMELL
+Wsquid:S1659å"$Declare "count4" on a separate line.(ã¸ñ¼úÿÿÿÿH´RMINORZ
+CODE_SMELL
+qsquid:S2095Ü"HUse try-with-resources or close this "FileWriter" in a "finally" clause.(´ˆâëHµRBLOCKERZBUG
+‹squid:S1488,"YImmediately return this expression instead of assigning it to the temporary variable "n".(®üíäûÿÿÿÿH¶RMINORZ
+CODE_SMELL
+ksquid:S1197³"8Move the array designator from the variable to the type.(ï‡ü™üÿÿÿÿH·RMINORZ
+CODE_SMELL
+†squid:S2293Š"YReplace the type specification in this constructor call with the diamond operator ("<>").(ŠƒÆH¸RMINORZ
+CODE_SMELL
+fsquid:S1197·"8Move the array designator from the variable to the type.(‰Ÿ§½H¹RMINORZ
+CODE_SMELL
+fsquid:S1197"8Move the array designator from the variable to the type.(©‹åµHºRMINORZ
+CODE_SMELL
+squid:S1319·"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‰Ÿ§½H»RMINORZ
+CODE_SMELL
+ƒsquid:S3776ä"RRefactor this method to reduce its Cognitive Complexity from 33 to the 15 allowed.(ËŒ„öH¼RCRITICALZ
+CODE_SMELL
+hsquid:S1854Ö"5Remove this useless assignment to local variable "w".(ºÿÄÎúÿÿÿÿH½RMAJORZ
+CODE_SMELL
+Osquid:S1659J""Declare "rand" on a separate line.(†×ĞÂH¾RMINORZ
+CODE_SMELL
+Rsquid:S1659¬"Declare "t" on a separate line.(ğãßøÿÿÿÿH¿RMINORZ
+CODE_SMELL
+Qsquid:S1659¨"#Declare "root1" on a separate line.(÷Ì¤HÀRMINORZ
+CODE_SMELL
+Rsquid:S1659¶"Declare "n" on a separate line.(òü§ÌüÿÿÿÿHÁRMINORZ
+CODE_SMELL
+usquid:S00112×"FDefine and throw a dedicated exception instead of using a generic one.(¶ñ…HÂRMAJORZ
+CODE_SMELL
+‹squid:S1488%"YImmediately return this expression instead of assigning it to the temporary variable "n".(ìÊüÿÿÿÿHÃRMINORZ
+CODE_SMELL
+fsquid:S1197Ù"8Move the array designator from the variable to the type.(Şï–¡HÄRMINORZ
+CODE_SMELL
+wsquid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(µ¾èHÅRMAJORZ
+CODE_SMELL
+ˆsquid:S3776Ô"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(¨àú„øÿÿÿÿHÆRCRITICALZ
+CODE_SMELL
+Usquid:S1659"'Declare "lossCount" on a separate line.(–êê¶HÇRMINORZ
+CODE_SMELL
+‡squid:S3012™"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ò…¹œHÈRMINORZ
+CODE_SMELL
+squid:S1488"[Immediately return this expression instead of assigning it to the temporary variable "str".(šâ…şÿÿÿÿHÉRMINORZ
+CODE_SMELL
+[squid:S1125Ï"(Remove the literal "true" boolean value.(ËíôÇşÿÿÿÿHÊRMINORZ
+CODE_SMELL
+Osquid:S1643©"Use a StringBuilder instead.(ªÿÏ¸ÿÿÿÿÿHËRMINORZ
+CODE_SMELL
+Psquid:S1659·""Declare "bool" on a separate line.(…¾˜ÚHÌRMINORZ
+CODE_SMELL
+Tsquid:S1659ã"!Declare "mid" on a separate line.(ÉûÜ²úÿÿÿÿHÍRMINORZ
+CODE_SMELL

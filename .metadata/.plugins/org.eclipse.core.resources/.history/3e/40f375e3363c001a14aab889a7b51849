@@ -1,0 +1,42 @@
+package com.bridgelabz.oop.model;
+
+
+/*
+*program to set and get the data
+*/
+public class InventoryModel {
+
+	private double price;
+	private double weight;
+	private double total;
+	
+	public void setPrice(double price)
+	{
+		this.price = price;
+	}
+	
+	public double getPrice(double price)
+	{
+		return this.price;
+	}
+	
+	public void setWeight(double weight)
+	{
+		this.weight = weight;
+	}
+	
+	public double getweight(double weight)
+	{
+		return this.weight;
+	}
+
+	public void setTotal(double total)
+	  {
+		this.total=total;
+	  }
+	public double getTotal(double total) {
+		
+		this.total;
+	}
+	
+}

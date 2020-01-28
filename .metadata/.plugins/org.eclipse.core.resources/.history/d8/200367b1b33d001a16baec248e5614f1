@@ -1,0 +1,7 @@
+package com.bridgelabz.oop.service;
+public interface InventoryInf {
+	
+	void readJSON();
+	void writeJSON();
+
+}

@@ -1,0 +1,32 @@
+package com.bridgelabz.oop.controller;
+import org.json.simple.JSONObject;
+import com.bridgelabz.oop.model.InventoryModel;
+import com.bridgelabz.oop.service.InventoryInf;
+import com.bridgelabz.oop.serviceimpl.*;
+/*
+ * program to manage the inventory
+ */
+public class InventoryManagement {
+	InventoryModel imodel = new InventoryModel();
+
+
+	public double getTotal(JSONObject obj)
+	{
+		double weight = (double) obj.get("Weight");
+
+		imodel.setWeight(weight);
+		double price = (double) obj.get("Price");
+		imodel.setPrice(price);
+		double total = imodel.getPrice()*imodel.getweight();
+		imodel.setTotal(total);
+		return imodel.getTotal();
+
+	}
+	public static void main(String[] args) {
+		InventoryInf im = new  InventoryManagementImpl();
+		im.writeJSON();
+		im.readJSON();
+
+	}
+}
+

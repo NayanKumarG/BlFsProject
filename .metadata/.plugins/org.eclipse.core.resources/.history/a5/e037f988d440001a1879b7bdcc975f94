@@ -1,0 +1,7 @@
+package com.bridgelabz.oop.service;
+
+public interface StockAccountInf {
+void checkShare();
+
+void buyShare();
+}

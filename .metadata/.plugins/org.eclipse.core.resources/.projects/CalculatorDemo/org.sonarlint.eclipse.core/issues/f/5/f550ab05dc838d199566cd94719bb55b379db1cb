@@ -1,0 +1,8 @@
+
+Tsquid:S1659""Declare "num2" on a separate line.(‹üıÿÿÿÿHìRMINORZ
+CODE_SMELL
+squid:S1450
+"TRemove the "calci" field and declare it as a local variable in the relevant methods.(ú…‚HíRMINORZ
+CODE_SMELL
+ƒsquid:S1450	"VRemove the "service" field and declare it as a local variable in the relevant methods.(Ò‘²ÄHîRMINORZ
+CODE_SMELL

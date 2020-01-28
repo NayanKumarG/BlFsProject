@@ -1,0 +1,59 @@
+package com.bridgelabz.oop.controller;
+
+import com.bridgelabz.oop.serviceimpl.AddressBookImpl;
+import com.bridgelabz.oop.model.BookModel;
+import com.bridgelabz.oop.service.AddressBookInf;
+import com.bridgelabz.util.Utility;
+
+public class AddressBookManagement {
+	private static BookModel bmodel;
+	public static void main(String[] args) {
+		AddressBookInf book = new AddressBookImpl();
+		System.out.println("AddressBook management System");
+		char c;
+		int choice;
+		do
+		{
+
+			System.out.println("Enter your choice:");
+			System.out.println("1.Add a Profile \n"+"2.Display Profile"+
+							"3.Remove person \n"+"4.Edit Profile \n"+"5.Exit");
+
+			choice = Utility.inputInteger();
+			switch (choice) 
+			{
+			case 1:
+				personProfile();
+				book.addProfile(bmodel);
+			case 2:
+				book.dispalyProfile();
+
+			}
+
+			System.out.println("Do you want to continue Y/y or N/n");
+			c= Utility.inputWord().charAt(0);
+		}while(c =='Y' || c == 'y');
+	}
+
+	private static void personProfile() {
+		bmodel = new BookModel();
+		System.out.println("Enter your Detail:");
+		System.out.println("UserId:");
+		bmodel.setUserId(Utility.inputWord());
+		System.out.print("FirstName:");
+		bmodel.setFirstName(Utility.inputWord());
+		System.out.print("LastName:");
+		bmodel.setLastName(Utility.inputWord());
+		System.out.print("Address");
+		bmodel.setAddress(Utility.inputWord());
+		System.out.print("City:");
+		bmodel.setCity(Utility.inputWord());
+		System.out.print("State:");
+		bmodel.setState(Utility.inputWord());
+		System.out.print("ZipCode:");
+		bmodel.setZip(Utility.inputLong());
+		System.out.print("Phone no:");
+		bmodel.setPhoneNo(Utility.inputLong());
+	}
+
+}

@@ -1,0 +1,71 @@
+package com.bridgelabz.oop.serviceimpl;
+import java.io.File;
+import java.io.FileReader;
+import java.io.FileWriter;
+
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+
+import com.bridgelabz.oop.model.BookModel;
+import com.bridgelabz.oop.service.*;
+public class AddressBooksImpl implements AddressBookInf {
+
+	@Override
+	public void addProfile(BookModel bmodel) {
+		try
+		{
+			file = new File( "/home/user/eclipse-workspace/Oop/"
+					+ "src/main/java/com/bridgelabz/oop/repository/addressBook.json");
+			reader = new FileReader(file);
+			JSONParser parser = new JSONParser();
+			JSONArray array = (JSONArray) parser.parse(reader);
+			JSONObject object = new JSONObject();
+			object.put("UserId", bmodel.getUserId());
+			object.put("FirstName", bmodel.getFirstName());
+			object.put("LastName", bmodel.getLastName());
+			object.put("Address", bmodel.getAddress());
+			object.put("City", bmodel.getCity());
+			object.put("State", bmodel.getState());
+			object.put("ZipCode", bmodel.getZip());
+			object.put("PhoneNo", bmodel.getPhoneNo());
+			array.add(object);
+
+			writer = new FileWriter(file);
+			writer.write( JSONArray.toJSONString(array));
+
+			System.out.println("Details added succefully....");
+
+		} catch (IOException | ParseException e) {
+			System.out.println("File not found or wrong directory");
+		}
+
+
+
+	}
+
+	@Override
+	public void dispalyProfile(String user) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean checkUser(BookModel bmodel) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public void removeProfile(String userId1) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void editProfile(String userId2) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

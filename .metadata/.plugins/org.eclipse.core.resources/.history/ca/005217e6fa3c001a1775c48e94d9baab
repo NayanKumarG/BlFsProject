@@ -1,0 +1,81 @@
+package com.bridgelabz.oop.serviceImpl;
+import org.json.simple.parser.*;
+
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import com.bridgelabz.util.*;
+import com.bridgelabz.oop.service.StockInf;
+
+
+/*
+ * implementation for stock management
+ */
+public class StockManagementImpl implements StockInf{
+
+
+	//method to write the data into json file
+	@SuppressWarnings("unchecked")
+	@Override
+	public void writeData() {
+		JSONObject writeObj = new JSONObject();
+		System.out.println("Enter the number of stocks:");
+		int n = Utility.inputInteger();
+		for(int i = 0 ; i<n ; i++ )
+		{
+			JSONObject obj = new JSONObject();
+			System.out.println("Enter the share name:");
+			String sname = Utility.inputWord();
+			System.out.println("enter the number of shares in "+sname);
+			int snum = Utility.inputInteger();
+			System.out.println("Enter the number of share price:");
+			int sprice = Utility.inputInteger();
+			obj.put("Number of shares",snum);
+			obj.put("Share Price", sprice);
+			writeObj.put(sname,obj);
+		}
+		
+		try(FileWriter file = new FileWriter("/home/user/eclipse-workspace/Oop"
+				+ "/src/main/java/com/bridgelabz/oop/repository/stock.json"))
+		{
+
+   file.write(writeObj.toJSONString());
+	}catch(IOException e)
+		{
+		System.out.println("Directory or file not found");
+		}
+	}
+	/*
+	 * method to read json data
+	 */
+	@Override
+	public void readData() {
+		JSONParser parser = new JSONParser();
+      try(FileReader file = new FileReader("/home/user/eclipse-workspace/Oop"
+				+ "/src/main/java/com/bridgelabz/oop/repository/stock.json"))
+      {
+    	  
+    	  JSONObject obj = (JSONObject) parser.parse(file);
+    	 for(Object keys : obj.keySet())
+    	 {
+    		String key = (String)keys;
+    		JSONObject jobj = (JSONObject) obj.get(key);
+    		System.out.println(jobj);
+    		
+    		
+    	 }
+    
+	}catch(IOException | ParseException e)
+		{
+		System.out.println("Directory or file not found");
+		}
+	}
+	public static void main(String[] args) {
+
+
+
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 elements to &apos;BlFsPrograms/src/main/java/com.bridgelabz.dataStructurePrograms&apos;&#x0A;- Original project: &apos;New&apos;&#x0A;- Destination element: &apos;BlFsPrograms/src/main/java/com.bridgelabz.dataStructurePrograms&apos;&#x0A;- Original elements:&#x0A;     MyQueue.java&#x0A;     BankingQueueDemo.java&#x0A;     DeQueue.java&#x0A;     PalindromeChecker.java" description="Copy compilation units" destination="=BlFsPrograms/src\/main\/java&lt;com.bridgelabz.dataStructurePrograms" element1="/src&lt;{MyQueue.java" element2="/src&lt;{BankingQueueDemo.java" element3="/src&lt;{DeQueue.java" element4="/src&lt;{PalindromeChecker.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1578975317419" units="4" version="1.0"/>
+</session>

@@ -1,0 +1,36 @@
+
+Jsquid:S1643“"Use a StringBuilder instead.(‘‘¯ÌHåRMINORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine®"<This block of commented-out lines of code should be removed.(‚Âğ¾HöRMAJORZ
+CODE_SMELL
+jsquid:S18547"8Remove this useless assignment to local variable "prev".(õÇÆêÿÿÿÿÿHíRMAJORZ
+CODE_SMELL
+ksquid:S2259Ö"?A "NullPointerException" could be thrown; "t" is nullable here.(¤ïÊ—ÿÿÿÿÿHëRMAJORZBUG
+†squid:S2293a"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñ‚ñêHòRMINORZ
+CODE_SMELL
+Osquid:S1643"Use a StringBuilder instead.(ûÃ•ğûÿÿÿÿHæRMINORZ
+CODE_SMELL
+Isquid:S3626¦"Remove this redundant jump.(ûÁİ…HñRMINORZ
+CODE_SMELL
+†squid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñ‚ñêHìRMINORZ
+CODE_SMELL
+wsquid:S3973"GUse indentation to denote the code conditionally executed by this "if".(¤œ¯HèRCRITICALZ
+CODE_SMELL
+Osquid:S1643ÿ"Use a StringBuilder instead.(‚º¤öûÿÿÿÿHäRMINORZ
+CODE_SMELL
+Œsquid:S4165>"_Remove this useless assignment; "t" already holds the assigned value along all execution paths.(ÚÏ§HçRMAJORZ
+CODE_SMELL
+Œsquid:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ĞÖşøüÿÿÿÿHóRMINORZ
+CODE_SMELL
+bsquid:S1854>"5Remove this useless assignment to local variable "t".(ÚÏ§HîRMAJORZ
+CODE_SMELL
+ysquid:CommentedOutCodeLine§"<This block of commented-out lines of code should be removed.(Á…ÕğHõRMAJORZ
+CODE_SMELL
+‡squid:S2293•"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñ‚ñêHğRMINORZ
+CODE_SMELL
+~squid:S3973n"IUse indentation to denote the code conditionally executed by this "else".(„¶áìøÿÿÿÿHêRCRITICALZ
+CODE_SMELL
+~squid:CommentedOutCodeLine¥"<This block of commented-out lines of code should be removed.(šÕ¼ÇıÿÿÿÿHôRMAJORZ
+CODE_SMELL
+Isquid:S1643ü"Use a StringBuilder instead.(ÃíHãRMINORZ
+CODE_SMELL
