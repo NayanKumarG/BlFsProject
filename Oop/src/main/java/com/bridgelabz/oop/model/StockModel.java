@@ -1,5 +1,8 @@
 package com.bridgelabz.oop.model;
 
+/*
+ * program for stock model
+ */
 public class StockModel {
 
 	private String name;
