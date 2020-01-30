@@ -50,10 +50,12 @@ public class InventoryManagementImpl implements InventoryInf {
 
 
 
-	//read data from json file
+	/*
+	 * read data from json file
+	 */
 	@Override
 	public void readJSON() {
-		String items[] = {"Rice" , "Wheats" , "Pulses"};
+		String [] items= {"Rice" , "Wheats" , "Pulses"};
 		InventoryManagement im = new InventoryManagement();
 		JSONParser parser = new JSONParser();
 		JSONArray jsonArray ;

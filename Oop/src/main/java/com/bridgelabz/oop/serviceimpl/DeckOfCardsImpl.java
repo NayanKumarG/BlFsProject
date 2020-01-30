@@ -53,7 +53,7 @@ public class DeckOfCardsImpl implements DeckOfCardsInf
 	}
 
 	/*
-	 * override method to distribute the card
+	 * override method to distribute the cards
 	 */
 	@Override
 	public String[][] distributeCards(String [] strArray) {
@@ -71,7 +71,7 @@ public class DeckOfCardsImpl implements DeckOfCardsInf
 	}
 
 	/*
-	 * display the players card using 2 dimentional array
+	 * display the players card using 2D array
 	 */
 	@Override
 	public void displayCards(String [][] array) {

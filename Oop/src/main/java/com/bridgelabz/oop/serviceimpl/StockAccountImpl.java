@@ -29,6 +29,7 @@ public class StockAccountImpl implements StockAccountInf{
 	/*
 	 * method to create user account
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void createAccount(StockAccountModel saModel) {
 
@@ -135,6 +136,7 @@ public class StockAccountImpl implements StockAccountInf{
 	/*
 	 * method to buy share
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void buyShare(String name, String symbol) {
 		try
@@ -250,6 +252,7 @@ public class StockAccountImpl implements StockAccountInf{
 	/*
 	 * method to sell the share
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void sellShare(String name , String symbol) {
 		try

@@ -39,7 +39,7 @@ public class StockManagementImpl implements StockInf{
 		}
 	}
 	/*
-	 * method to read json data
+	 * method to read data from json file
 	 */
 	@Override
 	public void readData() {

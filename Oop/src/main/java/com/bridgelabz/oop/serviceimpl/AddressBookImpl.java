@@ -175,9 +175,7 @@ public class AddressBookImpl implements AddressBookInf {
 				}
 			}
 
-			FileWriter writer = new FileWriter("/home/user/eclipse-workspace/Oop"
-				
-					+ "/src/main/java/com/bridgelabz/oop/repository/addressBook.json");
+			FileWriter writer = new FileWriter( "/home/user/eclipse-workspace/Oop/src/main/java/com/bridgelabz/oop/repository/addressBook.json");
 			
 			writer.write(array.toJSONString());
 			writer.close();
@@ -195,6 +193,7 @@ public class AddressBookImpl implements AddressBookInf {
 	/*
 	 * method to edit the profile
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public void editProfile(String userId) {
 		BookModel bmodel = new BookModel();
