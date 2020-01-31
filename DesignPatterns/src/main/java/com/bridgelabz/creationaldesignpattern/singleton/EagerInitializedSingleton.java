@@ -20,9 +20,6 @@ public class EagerInitializedSingleton {
 		return object;
 	}
 	
-	public void display()
-	{
-		System.out.println("EagerInitializedSingleton pattern");
-	}
+	
 
 }
